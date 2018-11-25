@@ -1,0 +1,61 @@
+@import "../../../global";
+
+$primary-color: $resume;
+
+.accordion-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  &:first-child {
+    margin-top: 0;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.header {
+  box-shadow: 0 5px 0 mix(black, $primary-color, 50%);
+  padding: 0.8rem;
+  border-style: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: $primary-color;
+  width: 100%;
+  font-family: $font-family;
+  font-size: $font-size-verylarge;
+  font-weight: $font-weight-medium;
+  text-align: left;
+  cursor: pointer;
+  outline-style: none;
+
+  @include phone {
+    font-size: $font-size-large;
+  }
+
+  &.active::after {
+    transform: rotate(180deg);
+  }
+
+  &::after {
+    font-size: 1.4em;
+    font-family: "Material Icons";
+    content: "expand_more";
+    float: right;
+    transition: transform 0.25s ease-in-out;
+  }
+}
+
+.body {
+  transition: max-height 0.3s ease-in-out;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  font-family: $font-family;
+  font-weight: $font-weight-medium;
+
+
+  h3 {
+    font-size: $font-size-large;
+  }
+}

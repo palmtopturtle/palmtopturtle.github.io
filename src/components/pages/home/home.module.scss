@@ -1,0 +1,17 @@
+@import '../../../global';
+
+.content-container {
+    p {
+        text-align: center;
+        font-size: $font-size-large;
+        font-weight: $font-weight-regular;
+        font-family: $font-family;
+        line-height: 2em;
+        margin: 0;
+
+        @include phone {
+            font-size: $font-size-regular;
+            font-weight: $font-weight-medium;
+        }
+    }
+}

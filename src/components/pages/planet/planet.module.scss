@@ -1,0 +1,116 @@
+@import "../../../global";
+
+//File paths
+$local-path: "../../../images/";
+$home-bg: "#{$local-path}planet-home.png";
+$resume-bg: "#{$local-path}planet-resume.png";
+$projects-bg: "#{$local-path}planet-projects.png";
+$contact-bg: "#{$local-path}planet-contact.png";
+
+//Planet mixin
+@mixin planet($color, $path, $time, $tilt, $direction) {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transform: rotate($tilt);
+  background: url(#{$path}) repeat;
+  background-size: cover;
+  animation: rotatePlanet#{$direction} $time infinite linear;
+  box-shadow: 0 0 25px $color;
+
+  @include tablet {
+    animation: rotatePlanet#{$direction}Tablet $time infinite linear;
+  }
+
+  @include phone {
+    animation: rotatePlanet#{$direction}Phone $time infinite linear;
+  }
+}
+
+//Classes
+.planet-container {
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  margin: 2rem auto 3rem auto;
+
+  @include tablet {
+    width: 400px;
+    height: 400px;
+  }
+
+  @include phone {
+    width: 215px;
+    height: 215px;
+  }
+}
+
+.planet- {
+  &home {
+    @include planet($home, $home-bg, 100s, 20deg, Right);
+  }
+  &resume {
+    @include planet($resume, $resume-bg, 50s, -5deg, Left);
+  }
+  &projects {
+    @include planet($projects, $projects-bg, 75s, 15deg, Right);
+  }
+  &contact {
+    @include planet($contact, $contact-bg, 60s, 30deg, Right);
+  }
+}
+
+//Animations
+@keyframes rotatePlanetRight {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: 800px;
+  }
+}
+
+@keyframes rotatePlanetLeft {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: -800px;
+  }
+}
+
+@keyframes rotatePlanetRightTablet {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: 640px;
+  }
+}
+
+@keyframes rotatePlanetLeftTablet {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: -640px;
+  }
+}
+
+@keyframes rotatePlanetRightPhone {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: 344px;
+  }
+}
+
+@keyframes rotatePlanetLeftPhone {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: -344px;
+  }
+}

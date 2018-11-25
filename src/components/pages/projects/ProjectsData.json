@@ -1,0 +1,78 @@
+[
+  {
+    "name": "Succulent Picture Bot",
+    "description": "This Twitter bot sifts through posts from r/succulents (a subreddit on Reddit) and then tweets out a picture once it finds a valid one. It's coded using Node.js and implements a NoSQL database via Redis, which ensures that post ID comparisons aren't lost if the process were to stop. Right now it is hosted for free with Glitch.",
+    "buttons": [
+      {
+        "name": "Twitter",
+        "url": "https://twitter.com/succulentsbot"
+      },
+      {
+        "name": "GitHub",
+        "url": "https://github.com/palmtopturtle/SucculentPictureBot"
+      }
+    ]
+  },
+  {
+    "name": "Reddit Gallery Viewer",
+    "description": "An app that fetches data from the Reddit API and displays the results using CSS Grid. I originally only developed this for photography-focused subreddits, but I figured why not let the user input their own? It also features a searching system based on tags for easy modification.",
+    "buttons": [
+      {
+        "name": "Live Demo",
+        "url": "RedditGalleryViewer"
+      },
+      {
+        "name": "GitHub",
+        "url": "https://github.com/palmtopturtle/RedditGalleryViewer"
+      }
+    ]
+  },
+  {
+    "name": "This Website",
+    "description": "A personal project made entirely in React with mostly custom componenets and React Router. The first thing I determined was a theme, and once that was decided everything else just kind of flowed from there. The background is a canvas element that emulates twinkling stars.",
+    "buttons": [
+      {
+        "name": "Github",
+        "url": "https://github.com/palmtopturtle/palmtopturtle.github.io"
+      }
+    ]
+  },
+  {
+    "name": "Canvas Fireworks",
+    "description": "Interesting little HTML Canvas and vanilla JavaScript fireworks generator. I enjoyed working on this one as it required thinking from a different perspective in order to implement the physics of each particle in an array, rather than just managing more traditional data sets. Rendering in canvas is clunky, but can be fun.",
+    "buttons": [
+      {
+        "name": "Live Demo",
+        "url": "fireworks"
+      },
+      {
+        "name": "GitHub",
+        "url": "https://github.com/palmtopturtle/fireworks"
+      }
+    ]
+  },
+  {
+    "name": "Old Portfolio Website",
+    "description": "My old website, which I put together quickly using only HTML and CSS just to have something out there. Due to the way GitHub Pages works, I've only left up the homepage in the live demo - the code for the other pages is still viewable via the GitHub repository.",
+    "buttons": [
+      {
+        "name": "Live Demo",
+        "url": "oldwebsite"
+      },
+      {
+        "name": "GitHub",
+        "url": "https://github.com/palmtopturtle/oldwebsite"
+      }
+    ]
+  },
+  {
+    "name": "Robintek Prototypes",
+    "description": "A collection of some of the various web design projects I worked on during my internship at Robintek. I wrote the CSS/HTML for a few of them as well, and got experience working with WordPress, JavaScript, and content management systems.",
+    "buttons": [
+      {
+        "name": "Google Drive",
+        "url": "https://drive.google.com/drive/folders/0Bz6pl_3sltudTWdJLVB2UnYwZHc?usp=sharing"
+      }
+    ]
+  }
+]

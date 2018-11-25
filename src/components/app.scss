@@ -1,0 +1,24 @@
+@mixin fade($opacity) {
+  width: 100%;
+  overflow-y: auto;
+  position: fixed;
+  opacity: $opacity;
+}
+
+.fade-enter {
+  @include fade(0);
+
+  &.fade-enter-active {
+    @include fade(1);
+    transition: opacity 300ms ease-in 300ms;
+  }
+}
+
+.fade-exit {
+  @include fade(1);
+
+  &.fade-exit-active {
+    @include fade(0);
+    transition: opacity 300ms ease-in;
+  }
+}

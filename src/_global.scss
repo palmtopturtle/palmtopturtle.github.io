@@ -1,0 +1,98 @@
+//Colors
+$home: hsl(272, 100%, 48%);
+$resume: hsl(144, 100%, 29%);
+$projects: hsl(3, 68%, 42%);
+$contact: hsl(206, 100%, 59%);
+
+//Fonts
+$font-family: "Open Sans", sans-serif;
+$font-size-regular: 1rem;
+$font-size-large: 1.5rem;
+$font-size-verylarge: 2rem;
+$font-weight-regular: 300;
+$font-weight-medium: 400;
+$font-weight-bold: 700;
+
+$font-family-header: "K2D", sans-serif;
+$font-size-header: 9rem;
+$font-size-header-tablet: 6.5rem;
+$font-size-header-phone: 3.5rem;
+
+//Responsive
+$screen-tablet: 1000px;
+$screen-phone: 650px;
+
+@mixin tablet {
+  @media (max-width: $screen-tablet) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media (max-width: $screen-phone) {
+    @content;
+  }
+}
+
+//Other mixins
+@mixin button($text-color, $bg-color) {
+  display: inline-block;
+  font-size: $font-size-regular;
+  font-weight: $font-weight-bold;
+  font-family: $font-family;
+  text-decoration: none;
+  border-style: none;
+  border-radius: 5px;
+  background-color: $bg-color;
+  color: $text-color;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 3px 0 mix(black, $text-color, 50%);
+  margin-right: 0.5rem;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+//Classes
+.content-container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto 1rem auto;
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.page-header {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  margin-top: 1em;
+  text-align: center;
+  font-family: $font-family-header;
+  font-size: $font-size-header;
+  z-index: 1;
+  color: #fff;
+
+  @include tablet {
+    font-size: $font-size-header-tablet;
+  }
+
+  @include phone {
+    font-size: $font-size-header-phone;
+  }
+}
+
+//Reset
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}

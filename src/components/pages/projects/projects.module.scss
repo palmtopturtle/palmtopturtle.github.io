@@ -1,0 +1,15 @@
+@import "../../../global";
+
+$primary-color: $projects;
+
+.tiles-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: auto;
+  grid-gap: 1rem 1rem;
+  align-items: start;
+
+  @include phone {
+    grid-template-columns: 1fr;
+  }
+}
