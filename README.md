@@ -1,5 +1,5 @@
 ## palmtopturtle.github.io
-My personal website.
+Welcome to the source code!
 
 ### Todo
 * ~~Implement SCSS and CSS modules~~ much better
