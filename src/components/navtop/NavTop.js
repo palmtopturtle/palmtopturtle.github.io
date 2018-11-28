@@ -29,7 +29,7 @@ const NavTop = () => {
           <NavLink
             to="/projects"
             className={styles["nav-projects"]}
-            activeStyle={{ color: "#B52A23" }}
+            activeStyle={{ color: "#1980ff" }} 
           >
             Projects
           </NavLink>
@@ -38,7 +38,7 @@ const NavTop = () => {
           <NavLink
             to="/contact"
             className={styles["nav-contact"]}
-            activeStyle={{ color: "#2EA3FF" }}
+            activeStyle={{ color: "#E25C2D" }}
           >
             Contact
           </NavLink>
