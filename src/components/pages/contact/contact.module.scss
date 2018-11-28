@@ -1,5 +1,37 @@
-@import '../../../global';
+@import "../../../global";
 
+//Colors
+$linkedin: hsl(201, 100%, 35%);
+$github: hsl(210, 12%, 16%);
+
+//Mixins
+@mixin contact-btn ($color) {
+    cursor: pointer;
+    text-decoration: none;
+    flex: 1;
+    text-align: center;
+    background-color: $color;
+    border-radius: 5px;
+    box-shadow: 0 5px 0 mix(black, $color, 50%);
+    padding: 1rem;
+    font-family: $font-family;
+    font-weight: $font-weight-medium;
+    font-size: $font-size-verylarge;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+    margin: 0 0.5rem;
+
+    @include phone {
+        font-size: $font-size-large;
+    }
+
+    &:hover {
+      background-color: mix(#fff, $color, 15);
+      flex: 2;
+    }
+}
+
+//Classes
 .content-container {
     p {
         text-align: center;
@@ -7,6 +39,26 @@
         font-weight: $font-weight-regular;
         font-family: $font-family;
         line-height: 2em;
-        margin: 0;
+        margin: 0 0 3rem 0;
+
+        @include phone {
+            font-size: $font-size-regular;
+            font-weight: $font-weight-medium;
+        }
     }
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 -0.5rem;
+
+  .btn-linkedin {
+      @include contact-btn($linkedin);
+  }
+
+  .btn-github {
+      @include contact-btn($github);
+  }
 }
