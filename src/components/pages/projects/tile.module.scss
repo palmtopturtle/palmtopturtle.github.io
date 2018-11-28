@@ -1,12 +1,37 @@
 @import "../../../global";
 
 $primary-color: $projects;
+$accent-color: hsl(204, 100%, 56%);
+$color-gradient: $primary-color;
+$num-projects: 6; //be sure to update this when necessary
+
+/* Generates a gradient from the primary color to the accent color */
+@for $i from 1 through $num-projects - 1 {
+  $color-gradient: append(
+    $color-gradient,
+    mix($accent-color, $primary-color, (100 / $num-projects) * $i)
+  );
+}
 
 .tile {
-  background-color: $primary-color;
   border-radius: 5px;
   padding: 1.5rem;
   box-shadow: 0 5px 0 mix(black, $primary-color, 50%);
+
+  @for $i from 1 through $num-projects {
+    &:nth-child(#{$i}) {
+      $color: nth($color-gradient, $i);
+      background-color: $color;
+
+      .btn-container {
+        text-align: center;
+
+        .btn {
+          @include button($color, #fff);
+        }
+      }
+    }
+  }
 
   h3 {
     font-family: $font-family;
@@ -23,13 +48,5 @@ $primary-color: $projects;
     font-weight: $font-weight-medium;
     color: #fff;
     font-size: $font-size-regular;
-  }
-
-  .btn-container {
-    text-align: center;
-
-    .btn {
-      @include button($primary-color, #fff);
-    }
   }
 }
