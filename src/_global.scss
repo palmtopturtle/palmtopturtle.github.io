@@ -1,8 +1,8 @@
 //Colors
 $home: hsl(272, 100%, 48%);
 $resume: hsl(144, 100%, 29%);
-$projects: hsl(3, 68%, 42%);
-$contact: hsl(206, 100%, 59%);
+$contact: 	hsl(16, 76%, 53%);
+$projects: hsl(213, 100%, 54.9%);
 
 //Fonts
 $font-family: "Open Sans", sans-serif;
@@ -61,38 +61,4 @@ $screen-phone: 650px;
   padding: 16px;
   background-color: #fff;
   border-radius: 5px;
-}
-
-.page-header {
-  display: block;
-  position: absolute;
-  left: 0;
-  width: 100%;
-  margin-top: 1em;
-  text-align: center;
-  font-family: $font-family-header;
-  font-size: $font-size-header;
-  z-index: 1;
-  color: #fff;
-
-  @include tablet {
-    font-size: $font-size-header-tablet;
-  }
-
-  @include phone {
-    font-size: $font-size-header-phone;
-  }
-}
-
-//Reset
-* {
-  box-sizing: border-box;
-}
-
-html,
-body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
 }
