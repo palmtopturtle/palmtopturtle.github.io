@@ -15,7 +15,7 @@
   },
   {
     "name": "Reddit Gallery Viewer",
-    "description": "An app that fetches data from the Reddit API and displays the results using CSS Grid. I originally only developed this for photography-focused subreddits, but I figured why not let the user input their own? It also features a searching system based on tags for easy modification.",
+    "description": "An app that fetches data from the Reddit API and displays the results using CSS Grid. I originally only developed this for photography-focused subreddits, but I figured why not let the user input their own? It also features a searching system based on easily modifiable tags, something that the normal Reddit search system lacks.",
     "buttons": [
       {
         "name": "Live Demo",
@@ -29,7 +29,7 @@
   },
   {
     "name": "This Website",
-    "description": "A personal project made entirely in React with mostly custom componenets and React Router. The first thing I determined was a theme, and once that was decided everything else just kind of flowed from there. The background is a canvas element that emulates twinkling stars.",
+    "description": "A personal project coded in React, featuring mostly custom componenets and single-page navigation through React Router. The first thing I determined was a theme (I'm a big fan of space), and once that was decided everything else just kind of flowed from there. The background is a canvas element that emulates twinkling stars.",
     "buttons": [
       {
         "name": "Github",
@@ -39,7 +39,7 @@
   },
   {
     "name": "Canvas Fireworks",
-    "description": "Interesting little HTML Canvas and vanilla JavaScript fireworks generator. I enjoyed working on this one as it required thinking from a different perspective in order to implement the physics of each particle in an array, rather than just managing more traditional data sets. Rendering in canvas is clunky, but can be fun.",
+    "description": "Click (or tap) on the screen to create fireworks! I enjoyed working on this one as it required thinking from a different perspective in order to implement the physics of each particle in an array, rather than just managing more traditional data sets. Rendering in canvas is clunky, but can be fun.",
     "buttons": [
       {
         "name": "Live Demo",
