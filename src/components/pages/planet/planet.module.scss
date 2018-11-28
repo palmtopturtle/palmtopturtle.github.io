@@ -28,6 +28,27 @@ $contact-bg: "#{$local-path}planet-contact.png";
 }
 
 //Classes
+.page-header {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  margin-top: 1em;
+  text-align: center;
+  font-family: $font-family-header;
+  font-size: $font-size-header;
+  z-index: 1;
+  color: #fff;
+
+  @include tablet {
+    font-size: $font-size-header-tablet;
+  }
+
+  @include phone {
+    font-size: $font-size-header-phone;
+  }
+}
+
 .planet-container {
   height: 500px;
   width: 500px;
