@@ -1,7 +1,7 @@
 [
   {
     "name": "Succulent Picture Bot",
-    "description": "This Twitter bot sifts through posts from r/succulents (a subreddit on Reddit) and then tweets out a picture once it finds a valid one. It's coded using Node.js and implements a NoSQL database via Redis, which ensures that post ID comparisons aren't lost if the process were to stop. Right now it is hosted for free with Glitch.",
+    "description": "This Twitter bot sifts through posts from r/succulents (a subreddit on Reddit) and then tweets out a picture once it finds a valid one. It's coded using Node.js and implements a NoSQL database via Redis, which ensures that post ID comparisons aren't lost if the process were to stop. Currently inactive, but you can view the source code.",
     "buttons": [
       {
         "name": "Twitter",

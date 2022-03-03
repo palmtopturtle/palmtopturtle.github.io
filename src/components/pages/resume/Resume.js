@@ -24,6 +24,30 @@ const Resume = () => {
           </ul>
         </Accordion>
         <Accordion header="Work Experience">
+        <h3>
+            BVA -{" "}
+            <span className={styles["job-title"]}>Front End Developer</span>
+          </h3>
+          <ul>
+            <li>
+              Developed storefront themes and admin interfaces for Shopify Plus clients to increase conversion, average order value, and product discovery.
+            </li>
+            <li>
+              Built and implemented on-brand loyalty and rewards programs to increase customer retention.
+            </li>
+            <li>
+              Integrated third-party solutions for tracking, segmentation, and remarketing.
+            </li>
+            <li>
+              Worked across multiple projects at a time, each with their own team of project managers, designers, and developers. Gained valuable insider knowledge of the e-commerce industry.
+            </li>
+            <li>
+              Audited and optimized website performance and accessibility.
+            </li>
+            <li>
+              Notable projects I worked on: UpWest, Ketologic, NOBULL, Chubbies Shorts, Porter Road, Rebecca Minkoff, Frida Baby
+            </li>
+          </ul>
           <h3>
             Robintek -{" "}
             <span className={styles["job-title"]}>Web Designer Internship</span>
@@ -63,6 +87,15 @@ const Resume = () => {
           </ul>
         </Accordion>
         <Accordion header="Skills">
+          <h3>Coding</h3>
+          <ul>
+            <li>HTML, CSS, SASS/SCSS</li>
+            <li>JavaScript, React.js, Vue, Node.js</li>
+            <li>Liquid, Shopify Plus</li>
+            <li>
+              Solid grasp of coding fundamentals (object-orientated, etc.)
+            </li>
+          </ul>
           <h3>General Computer Skills</h3>
           <ul>
             <li>Microsoft Office</li>
@@ -70,15 +103,6 @@ const Resume = () => {
             <li>PC troubleshooting and repair</li>
             <li>Basic network administration</li>
             <li>Social media analytics</li>
-          </ul>
-          <h3>Coding</h3>
-          <ul>
-            <li>HTML, CSS, SASS/SCSS</li>
-            <li>JavaScript, React.js, Node.js</li>
-            <li>Databases (SQL, Redis)</li>
-            <li>
-              Solid grasp of coding fundamentals (object-orientated, etc.)
-            </li>
           </ul>
         </Accordion>
       </div>
