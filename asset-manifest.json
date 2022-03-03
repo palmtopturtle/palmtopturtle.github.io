@@ -1,14 +1,16 @@
 {
-  "main.css": "/static/css/main.db3af36f.chunk.css",
-  "main.js": "/static/js/main.fbd69add.chunk.js",
-  "main.js.map": "/static/js/main.fbd69add.chunk.js.map",
-  "static/js/1.871692bf.chunk.js": "/static/js/1.871692bf.chunk.js",
-  "static/js/1.871692bf.chunk.js.map": "/static/js/1.871692bf.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
-  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
-  "static/css/main.db3af36f.chunk.css.map": "/static/css/main.db3af36f.chunk.css.map",
-  "static/media/planet.module.scss": "/static/media/planet-projects.d6bae92b.png",
-  "index.html": "/index.html",
-  "precache-manifest.b9509c1fe30cfaf6093296a43a5374ec.js": "/precache-manifest.b9509c1fe30cfaf6093296a43a5374ec.js",
-  "service-worker.js": "/service-worker.js"
+  "files": {
+    "main.css": "/static/css/main.4dfcfa66.css",
+    "main.js": "/static/js/main.ebff936d.js",
+    "static/media/planet-resume.png": "/static/media/planet-resume.311f05f36a9e23468280.png",
+    "static/media/planet-contact.png": "/static/media/planet-contact.3c39242ffe0853d324e0.png",
+    "static/media/planet-projects.png": "/static/media/planet-projects.98926943ac038f9cc23e.png",
+    "index.html": "/index.html",
+    "main.4dfcfa66.css.map": "/static/css/main.4dfcfa66.css.map",
+    "main.ebff936d.js.map": "/static/js/main.ebff936d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4dfcfa66.css",
+    "static/js/main.ebff936d.js"
+  ]
 }
