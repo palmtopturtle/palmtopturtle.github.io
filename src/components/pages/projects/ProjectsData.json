@@ -1,5 +1,29 @@
 [
   {
+    "name": "DYODE Challenge",
+    "description": "A simple homepage I created as part of a code challenge for DYODE, a Shopify agency I interviewed for. They were impressed and even said it was one of the best submissions they have received. As it is a simple mock-up, interactivity is limited. I built it using create-react-app using hooks and extended functionality off the slider component.",
+    "buttons": [
+      {
+        "name": "Live Demo",
+        "url": "https://palmtopturtle.github.io/dyode-challenge/"
+      },
+      {
+        "name": "GitHub",
+        "url": "https://github.com/palmtopturtle/dyode-challenge"
+      }
+    ]
+  },
+  {
+    "name": "UpWest",
+    "description": "Probably the biggest projects I worked on during my tenure at BVA. I helped with developing just about everything on the site - homepage, account pages, PDP, cart, you name it. It was also the one of the first projects to utilize our custom Vue build tool that I contributed to.",
+    "buttons": [
+      {
+        "name": "Live Site",
+        "url": "https://upwest.com/"
+      }
+    ]
+  },
+  {
     "name": "Succulent Picture Bot",
     "description": "This Twitter bot sifts through posts from r/succulents (a subreddit on Reddit) and then tweets out a picture once it finds a valid one. It's coded using Node.js and implements a NoSQL database via Redis, which ensures that post ID comparisons aren't lost if the process were to stop. Currently inactive, but you can view the source code.",
     "buttons": [

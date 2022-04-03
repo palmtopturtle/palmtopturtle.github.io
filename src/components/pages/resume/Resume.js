@@ -30,22 +30,22 @@ const Resume = () => {
           </h3>
           <ul>
             <li>
-              Developed storefront themes and admin interfaces for Shopify Plus clients to increase conversion, average order value, and product discovery.
+              Developed and maintained storefront themes and admin interfaces for Shopify Plus clients to increase conversion, average order value, and product discovery.
             </li>
             <li>
-              Built and implemented on-brand loyalty and rewards programs to increase customer retention.
+              Built and implemented interactive page layouts (homepage, account, PDP, cart, checkout, etc.) using mock-ups from the design team.
             </li>
             <li>
-              Integrated third-party solutions for tracking, segmentation, and remarketing.
+              Integrated third-party solutions for tracking, segmentation, and remarketing. Able to work with and learn new APIs.
             </li>
             <li>
-              Worked across multiple projects at a time, each with their own team of project managers, designers, and developers. Gained valuable insider knowledge of the e-commerce industry.
+              Worked across multiple projects at a time, each with their own team of managers, designers, and developers. Helped with the creation of a new build tool using Vue to optimize new themes and reduce dev time.
             </li>
             <li>
               Audited and optimized website performance and accessibility.
             </li>
             <li>
-              Notable projects I worked on: UpWest, Ketologic, NOBULL, Chubbies Shorts, Porter Road, Rebecca Minkoff, Frida Baby
+              Notable projects I worked on: UpWest, Ketologic, NOBULL, Chubbies Shorts, Porter Road, Rebecca Minkoff, Frida Baby, JNY
             </li>
           </ul>
           <h3>
@@ -93,7 +93,7 @@ const Resume = () => {
             <li>JavaScript, React.js, Vue, Node.js</li>
             <li>Liquid, Shopify Plus</li>
             <li>
-              Solid grasp of coding fundamentals (object-orientated, etc.)
+              Solid grasp of coding fundamentals
             </li>
           </ul>
           <h3>General Computer Skills</h3>

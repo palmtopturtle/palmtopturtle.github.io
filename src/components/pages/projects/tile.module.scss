@@ -3,7 +3,7 @@
 $primary-color: $projects;
 $accent-color: hsl(204, 100%, 56%);
 $color-gradient: $primary-color;
-$num-projects: 6; //be sure to update this when necessary
+$num-projects: 8; //be sure to update this when necessary
 
 /* Generates a gradient from the primary color to the accent color */
 @for $i from 1 through $num-projects - 1 {
