@@ -18,19 +18,33 @@ const Resume = () => {
               technology best practices in business, and more.
             </li>
           </ul>
-          <h3>Dublin Jerome High School</h3>
-          <ul>
-            <li>Graduated May 2014</li>
-          </ul>
         </Accordion>
         <Accordion header="Work Experience">
-        <h3>
+          <h3>
+            DYODE -{" "}
+            <span className={styles["job-title"]}>Front End Developer</span>
+          </h3>
+          <ul>
+            <li>
+              Audited and optimized website performance and accessibility, with quantifiable results and significant improvements in speed, SEO, and accessibility scores.
+            </li>
+            <li>
+              Handling both project and retainer work, providing accurate estimates and translating requirements into actionable tasks. With retainer work, I proactively fix bugs and integrate new features into existing sites’ ecosystems; whereas doing project work I’m able to create clear and concise outlines that I then turn into efficient and maintainable code.
+            </li>
+            <li>
+              Exposure to a lot of different parts of website development - ranging from backend discount scripts in Ruby to interactive carousels in JavaScript. 
+            </li>
+            <li>
+              Effective at asynchronous programming, often sending and consuming data from various API endpoints.
+            </li>
+          </ul>
+          <h3>
             BVA -{" "}
             <span className={styles["job-title"]}>Front End Developer</span>
           </h3>
           <ul>
             <li>
-              Developed and maintained storefront themes and admin interfaces for Shopify Plus clients to increase conversion, average order value, and product discovery.
+            Developed and maintained storefront themes and admin interfaces for Shopify Plus clients, increasing conversion rates for them.
             </li>
             <li>
               Built and implemented interactive page layouts (homepage, account, PDP, cart, checkout, etc.) using mock-ups from the design team.
@@ -42,67 +56,26 @@ const Resume = () => {
               Worked across multiple projects at a time, each with their own team of managers, designers, and developers. Helped with the creation of a new build tool using Vue to optimize new themes and reduce dev time.
             </li>
             <li>
-              Audited and optimized website performance and accessibility.
-            </li>
-            <li>
               Notable projects I worked on: UpWest, Ketologic, NOBULL, Chubbies Shorts, Porter Road, Rebecca Minkoff, Frida Baby, JNY
-            </li>
-          </ul>
-          <h3>
-            Robintek -{" "}
-            <span className={styles["job-title"]}>Web Designer Internship</span>
-          </h3>
-          <ul>
-            <li>
-              Designed website and logo prototypes for several local and
-              national businesses, including CarePlans, Delta H, and
-              SafeBasements of Ohio.
-            </li>
-            <li>
-              Developed custom HTML, CSS, and JavaScript as outlined in client
-              prototypes while also utilizing Robintek’s own content management
-              system.
-            </li>
-            <li>
-              Worked both collaboratively in a team environment and individually
-              on various projects that involved server maintenance, updating
-              existing code, and overall ensuring that clients' needs were met.
-            </li>
-          </ul>
-          <h3>
-            Staples -{" "}
-            <span className={styles["job-title"]}>
-              Technology Sales Associate
-            </span>
-          </h3>
-          <ul>
-            <li>
-              Provided personalized technical support to customers and sold
-              products ranging from laptops to printers.
-            </li>
-            <li>
-              Utilized Windows PowerShell to automate some tasks (e.g. scanning
-              for malware).
             </li>
           </ul>
         </Accordion>
         <Accordion header="Skills">
           <h3>Coding</h3>
           <ul>
-            <li>HTML, CSS, SASS/SCSS</li>
-            <li>JavaScript, React.js, Vue, Node.js</li>
-            <li>Liquid, Shopify Plus</li>
-            <li>
-              Solid grasp of coding fundamentals
-            </li>
+            <li>HTML, CSS</li>
+            <li>JavaScript</li>
+            <li>React, Vue</li>
+            <li>Typescript</li>
+            <li>Node.js</li>
+            <li>Liquid, Shopify</li>
           </ul>
           <h3>General Computer Skills</h3>
           <ul>
-            <li>Microsoft Office</li>
+            <li>Office suites (Microsoft, Google)</li>
             <li>Adobe Creative Suite</li>
             <li>PC troubleshooting and repair</li>
             <li>Basic network administration</li>
-            <li>Social media analytics</li>
           </ul>
         </Accordion>
       </div>

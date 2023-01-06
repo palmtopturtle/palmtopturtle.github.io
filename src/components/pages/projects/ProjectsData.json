@@ -1,7 +1,7 @@
 [
   {
     "name": "DYODE Challenge",
-    "description": "A simple homepage I created as part of a code challenge for DYODE, a Shopify agency I interviewed for. They were impressed and even said it was one of the best submissions they have received. As it is a simple mock-up, interactivity is limited. I built it using create-react-app using hooks and extended functionality off the slider component.",
+    "description": "A simple homepage I created as part of a code challenge for DYODE, a Shopify agency I interviewed for. They were impressed and even said it was one of the best submissions they have received. As it is a simple mock-up, interactivity is limited. I built it with create-react-app using hooks and extended functionality off the slider component.",
     "buttons": [
       {
         "name": "Live Demo",
@@ -15,7 +15,7 @@
   },
   {
     "name": "UpWest",
-    "description": "Probably the biggest projects I worked on during my tenure at BVA. I helped with developing just about everything on the site - homepage, account pages, PDP, cart, you name it. It was also the one of the first projects to utilize our custom Vue build tool that I contributed to.",
+    "description": "Probably one of the biggest projects I worked on during my tenure at BVA. I helped with developing just about everything on the site - homepage, account pages, PDP, cart, you name it. It was also the one of the first projects to utilize our custom Vue build tool that I contributed to.",
     "buttons": [
       {
         "name": "Live Site",
@@ -53,7 +53,7 @@
   },
   {
     "name": "This Website",
-    "description": "A personal project coded in React, featuring mostly custom componenets and single-page navigation through React Router. The first thing I determined was a theme (I'm a big fan of space), and once that was decided everything else just kind of flowed from there. The background is a canvas element that emulates twinkling stars.",
+    "description": "A personal project coded in React, featuring mostly custom components and single-page navigation through React Router. The first thing I determined was a theme (I'm a big fan of space), and once that was decided everything else just kind of flowed from there. The background is a canvas element that emulates twinkling stars.",
     "buttons": [
       {
         "name": "Github",
