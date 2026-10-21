@@ -1,4 +1,4 @@
-# Jeff Gieske — portfolio
+# Jeff G — portfolio
 
 Personal site and resume, built with [Astro](https://astro.build) and deployed to GitHub Pages by GitHub Actions.
 
