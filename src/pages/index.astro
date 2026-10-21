@@ -109,13 +109,16 @@ const resumeHref = person.resumePdf ? `${import.meta.env.BASE_URL}${person.resum
         <p>
           {about.personalBlurb}
         </p>
-        <Image
-          class="about-image"
-          src={rocks}
-          alt="An image of a low-poly 3D rock formation."
-          widths={[640, 1280]}
-          sizes="(min-width: 34rem) 640px, 1280px"
-        />
+        <figure>
+          <Image
+            class="about-image"
+            src={rocks}
+            alt="A low-poly 3D rock formation."
+            widths={[480, 800, 1280]}
+            sizes="(min-width: 52rem) 40rem, calc(100vw - 2rem)"
+          />
+          <figcaption>A low-poly rock formation I modeled and textured in Blender.</figcaption>
+        </figure>
       </div>
     </section>
 

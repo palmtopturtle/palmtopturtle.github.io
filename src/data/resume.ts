@@ -11,8 +11,8 @@ export const person = {
     'I build fast, accessible storefronts and interfaces with React, Next.js and TypeScript. ' +
     'Five years of Shopify and headless ecommerce work for high-traffic brands, ' +
     'with a background in UI/UX that shows up in the details. ' +
-    'My hands-on experience working with brands and cross-functional teams gives me a unique perspective, ' + 
-    'and the ability to apply my skills to a variety of roles.' ,
+    'I’ve worked directly with clients from scoping through launch, ' + 
+    'so I can move between code, design and planning.' ,
 };
 
 export type Project = {
@@ -28,8 +28,12 @@ export const projects: Project[] = [
     title: 'Headless storefront for Arrow Tool Group',
     context: 'DYODE',
     description:
-      'Helped architect and build a headless ecommerce storefront, from scoping and API development through implementation and deployment. Worked directly with client to scope out requirements and successfully delivered on the project.',
-    stack: ['Next.js', 'TypeScript', 'BigCommerce', 'Vercel'],
+        'DYODE’s first BigCommerce project, built on a headless framework that was still in beta. ' +
+        'I was trusted as part of a team to lead the build with no prior experience on either, ramped up quickly, ' +
+        'and took it from client scoping and API work through launch. When the docs ran out, ' +
+        'I took it upon myself to look through the source code and work with the Catalyst dev team ' +
+        'to implement new features and report bugs.' ,
+    stack: ['Next.js', 'TypeScript', 'Catalyst (beta)', 'BigCommerce', 'Vercel'],
   },
   {
     title: 'Custom Shopify themes',
