@@ -1,0 +1,146 @@
+---
+import Base from '../layouts/Base.astro';
+import { Image } from 'astro:assets';
+import rocks from '../assets/poly_rocks.png';
+import { person, projects, experience, education, skills, about } from '../data/resume';
+
+const resumeHref = person.resumePdf ? `${import.meta.env.BASE_URL}${person.resumePdf}` : null;
+---
+
+<Base>
+  <header class="masthead wrap">
+    <a class="masthead-name" href="#main">{person.name}</a>
+    <nav aria-label="Sections">
+      <ul>
+        <li><a href="#work">Work</a></li>
+        <li class="nav-secondary"><a href="#experience">Experience</a></li>
+        <li class="nav-secondary"><a href="#skills">Skills</a></li>
+        <li class="nav-secondary"><a href="#about">About me</a></li>
+        <li><a href="#contact">Contact</a></li>
+        {resumeHref && <li><a href={resumeHref}>Resume (PDF)</a></li>}
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="wrap">
+    <section class="hero" aria-labelledby="hero-name">
+      <p class="hero-role">{person.role} in {person.location}</p>
+      <h1 id="hero-name" class="hero-name">{person.name}</h1>
+      <div class="hero-body">
+        <p class="hero-lede">{person.summary}</p>
+        <div class="inspect-panel">
+          <button id="inspect-toggle" class="inspect-toggle" type="button" aria-pressed="false">
+            <span class="switch" aria-hidden="true"></span>
+            Inspect mode
+          </button>
+          <p class="inspect-hint">
+            See how this page is built. Hover, tap or tab to any element for its box model, type
+            settings and color contrast. Press Esc to exit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section" aria-labelledby="work-title">
+      <h2 id="work-title" class="section-title">Selected work</h2>
+      <div>
+        {
+          projects.map((p) => (
+            <article class="project">
+              <h3>{p.title}</h3>
+              <p class="project-context">{p.context}</p>
+              <p class="project-desc">{p.description}</p>
+              <ul class="project-stack" aria-label="Technologies">
+                {p.stack.map((s) => <li>{s}</li>)}
+              </ul>
+              {p.links && (
+                <p class="project-links">
+                  {p.links.map((l) => <a href={l.href}>{l.label}</a>)}
+                </p>
+              )}
+            </article>
+          ))
+        }
+      </div>
+    </section>
+
+    <section id="experience" class="section" aria-labelledby="experience-title">
+      <h2 id="experience-title" class="section-title">Experience</h2>
+      <div>
+        {
+          experience.map((job) => (
+            <article class="job">
+              <p class="job-dates">
+                <time>{job.start}</time>–<time>{job.end}</time>
+              </p>
+              <div>
+                <h3>{job.role}</h3>
+                <p class="job-meta">{job.company}, {job.location}</p>
+                <ul>
+                  {job.highlights.map((h) => <li>{h}</li>)}
+                </ul>
+              </div>
+            </article>
+          ))
+        }
+        <p class="education">
+          <strong>{education.school}</strong>, {education.degree}, {education.year}
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="section" aria-labelledby="skills-title">
+      <h2 id="skills-title" class="section-title">Skills</h2>
+      <div class="skills">
+        {
+          skills.map((s) => (
+            <div>
+              <h3>{s.group}</h3>
+              <p>{s.items.join(', ')}</p>
+            </div>
+          ))
+        }
+      </div>
+    </section>
+
+    <section id="about" class="section" aria-labelledby="about-title">
+      <h2 id="about-title" class="section-title">About me</h2>
+      <div class="about-body">
+        <p>
+          {about.personalBlurb}
+        </p>
+        <Image
+          class="about-image"
+          src={rocks}
+          alt="An image of a low-poly 3D rock formation."
+          widths={[640, 1280]}
+          sizes="(min-width: 34rem) 640px, 1280px"
+        />
+      </div>
+    </section>
+
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <h2 id="contact-title" class="section-title">Contact</h2>
+      <div>
+        <p class="contact-lede">Hiring for development, AI, or product management roles? Let’s talk.</p>
+        <ul class="contact-list">
+          {person.email && <li><a href={`mailto:${person.email}`}>{person.email}</a></li>}
+          <li><a href={person.github}>GitHub: {person.githubHandle}</a></li>
+          {person.linkedin && <li><a href={person.linkedin}>LinkedIn</a></li>}
+          {resumeHref && <li><a href={resumeHref}>Download my resume (PDF)</a></li>}
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap">
+    <p>
+      Built with Astro and deployed by GitHub Actions. <a
+        href="https://github.com/palmtopturtle/palmtopturtle.github.io">Source on GitHub</a>.
+    </p>
+  </footer>
+
+  <script>
+    import '../scripts/inspector.js';
+  </script>
+</Base>
